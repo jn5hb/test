@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Contact Lenses</title>
+    <link href="https://smc-26.github.io/sciencefair2023/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://smc-26.github.io/sciencefair2023/bootstrap.js"></script>
+</head>
+<body>
+    <script>addNavbar();</script>
+    <article>
+        <div id = "bg-wrapper-sunrise">
+            <img src = images/stars.png id = "stars1" class = "stars">
+        <div id = "bg-wrapper-noon">
+        <div id = "bg-wrapper-sunset">
+        <div id = "bg-wrapper-midnight">
+            <img src = images/clouds1.png id = "layer1">
+            <img src = images/clouds2.png id = "layer2">
+            <img src = images/stars.png id = "stars2" class = "stars">
+            <div id = "container1">
+                <div id = "content1" class = "hidden">
+                    <h1>Shades Everywhere: A Non-intrusive Way to Protect Eyes from<br>Ultraviolet Rays Using Transition Contact Lenses</h1>
+                    <p>Our research discusses the evolution of contact lenses and sunglasses and how modern advancements have led to the development of transition contact lenses. These lenses incorporate chemistry to filter out harmful UV wavelengths, providing protection for the eyes. A unique feature of transition contact lenses is that they remain clear when indoors but become shaded when exposed to outdoor light, offering a convenient alternative to traditional sunglasses.</p>
+                    <div id = "content1a">
+                        <div id = "content1a-first-div">
+                            <h1 class = "hidden">How to Use the Product</h1>
+                            <p class = "hidden">Transition contact lenses should be handled with clean and dry hands to avoid eye infection and disposed of after 14 days. Prior to application, the lenses should be rinsed with contact solution to remove build-up and moisten the eyes. They can be applied using a finger or an applicator, and are typically worn for 14 to 16 hours a day. It is recommended to remove the lenses before sleeping to allow the eyes to breathe.</p>
+                            <p class = "hidden">The way the contact lenses function at different levels of light can be seen with this website's interactive features. Upon changing the time with the use of the buttons, the amount of shade in the lenses changes accordingly.</p>
+                        </div>
+                        <div id = "interactive-wrap">
+                            <div id = "interactive-bar-div" class = "hidden">
+                                <div id = "interactive-bar">
+                                    <div class = "timebuttondiv" onclick = "setsunrise()">
+                                        <button id = "05:30" class = "timebutton"></button>
+                                        <span>05:30</span>
+                                    </div>
+                                    <div class = "timebuttondiv" onclick = "setnoon()">
+                                        <button id = "12:00" class = "timebutton"></button>
+                                        <span>12:00</span>
+                                    </div>
+                                    <div class = "timebuttondiv"  onclick = "setsunset()">
+                                        <button  id = "17:30" class = "timebutton"></button>
+                                        <span>17:00</span>
+                                    </div>
+                                    <div class = "timebuttondiv"  onclick = "setmidnight()">
+                                        <button  id = "00:00" class = "timebutton"></button>
+                                        <span>00:00</span>
+                                    </div>
+                                    <!-- 5:30 am, 12:00 pm, 5:30pm, 12:am-->
+                                </div>
+                            </div>
+                            <div id = "lens-div" class = "hidden delay">
+                                <div id = "lenslayer1"></div>
+                                <div id = "lenslayer2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div id = "container2">
+            <div class = "half">
+                <img src="images/img_chem.jpeg" class = "hidden">
+                <div>
+                    <h2 class = "hidden">The Chemistry Behind It</h2>
+                    <p class = "hidden delay" id = "chemp">Transition contact lenses contain microscopic silver halide crystals that are suspended in stationary glass. The crystallites are composed of multiple positively charged silver ions and negatively charged chloride/bromide ions. As high-frequency light shines onto the crystals, an electron gets removed from a chloride ion, and gets attracted to a silver ion. The electron usually returns to the chloride ion, but the crystallites contain silver ions with the same energy state, so the electron would transfer from one silver ion to another instead. This transfer occurs only if all the silver ions have the same environment. Once the electron reaches a silver ion that has different surroundings (e.g. silver ion located at the outer part of the crystallite), it gets trapped and starts to attract other electrons and silver ions until the silver ions gather up and the lens starts to dim. The purposely added copper ions will donate their electrons to the electron-deficient chlorine atoms for stabilization. The chlorine atoms travel in the lens and take electrons from the electron-rich silver ions. The silver concentration decreases in that area and initiates the gradual clearing of the lens.</p>
+                </div>
+            </div>
+            <div class = "half">
+                <div>
+                    <h2 class = "hidden adjust2mobile">Biology Aspects</h2>
+                    <p class = "hidden adjust2mobile">Contact lenses must be comfortable and have good visual performance as they are generally used for treating vision problems, and some for aesthetic purposes. The concept of contact lenses plus the technology of photochromic glasses create the transition contact lens. The lenses were designed to block ultraviolet (UV) light while only leaving subtle changes of color, as a matter of fact, they can heighten the color contrast by 38%. It is not recommended to sleep with contacts in, for it will increase the rate of having an infection by 6-8 times. Even worse, it may damage the cornea which will cause vision problems or blindness. Transition contact lenses must be disposed of 14 days after use. When using expired contacts, a person may experience discomforts or serious eye infections.</p>
+                </div>
+                <img src="images/img_bio.jpeg" class = "hidden delay adjust2mobile">
+            </div>
+            <div class = "half" id = "phys-div">
+                <img src="images/img_phys.jpeg" class = "hidden">
+                <div>
+                    <h2 class = "hidden">The Physics of Wavelengths</h2>
+                    <p class = "hidden delay">Ultraviolet radiation resides between visible light and X-ray in the electromagnetic spectrum (Baes, n.d.). The sun is a natural source of abundant UV radiation. Transition contact lenses, also known as photochromic lenses, utilize these ultraviolet wavelengths for it to change color. At around 320-400 nm UV wavelength, trillions of light-sensitive molecules adjust their structures, allowing them to become darker and light-absorbent.</p>
+                </div>
+            </div>
+            <div id = "references" class = "hidden">
+                <ul class = "hidden delay">
+                    <h2>References:</h2>
+                    <li>Baes, F. (n.d.). hps.org. Health Physics Society. https://hps.org/hpspublications/articles/uv.html#:~:
+       text=Ultraviolet%20(UV)%20adiation%20is%20defined,(30%E2%80%933%20eV).</li>
+                    <li>eyeSTYLE blog Lens.com. (2023, March 13). What You Need To Know About Transition Contact
+        Lenses - eyeSTYLE blog  Lens.com.eyeSTYLE blog Lens.com - Today’s Contact Lens News, Trends,      
+       and Styles. https://www.lens.com/eyestyle/technology/what-you-need-to-know-about-
+       transition-contact-lenses/#:~:text=The%20company%20wanted%20to%20avoid,change%20
+       the%20wearer's%20eye%20color.</li>
+                    <li>Hoffmann, H. F. (2003). The Use of Silver Salts for Photochromic Glasses. In Studies in organic
+       chemistry (pp. 822–854). Elsevier BV. https://doi.org/10.1016/b978-044451322-9/50026-9</li>
+                    <li>Team, W. P. (2023, February 9). Photochromic Lenses: How Do They Work? Warby Parker. https://
+       www.warbyparker.com/learn/photochromic-lenses#:~:text=How%20Do%20Photochromic%20
+       Lenses%20Work,the%20lenses%20become%20clear%20again.</li>
+                    <li>Transition Contact Lenses (Safety, Pros, Cons & Costs). (2023, March 17). Vision Center.   
+       https://www.visioncenter.org/contacts/transition/</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>About Us</p>
+            <a href="mailto:jsorongon@smc.pshs.edu.ph">Jelliane G. Sorongon</a>
+            <a href="mailto:rhythmderek.demecillo@smc.pshs.edu.ph">Rhythm Derek L. Demecillo</a>
+            <a href="mailto:victorii.quilao@smc.pshs.edu.ph?subject=subject text">Victor A. Quilao II</a>
+            <a href="mailto:janisharane.gregorio@smc.pshs.edu.ph">Janisha Rane J. Gregorio</a>
+            <a href="mailto:adrielle.reduta@smc.pshs.edu.ph">Adrielle N. Reduta</a>
+            <a href="mailto:augustineraphael.banguis@smc.pshs.edu.ph">Augustine Raphael P. Banguis</a>
+            <p>Copyright SY:2022-2023</p>
+        </footer>
+    </article>
+    <script src = "script.js"></script>
+</body>
+</html>
